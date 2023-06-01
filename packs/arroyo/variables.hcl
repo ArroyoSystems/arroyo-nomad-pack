@@ -108,3 +108,9 @@ variable "controller_resources" {
     memory = 256
   }
 }
+
+variable "image_tag" {
+  description = "The tag of the image to use"
+  type        = string
+  default     = "0.3.0"
+}

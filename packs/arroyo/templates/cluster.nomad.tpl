@@ -52,7 +52,7 @@ EOH
 
       config {
         network_mode = "host"
-        image = "ghcr.io/arroyosystems/arroyo-compiler:amd64"
+        image = "ghcr.io/arroyosystems/arroyo-compiler:[[ .arroyo.image_tag ]]"
         ports = ["grpc", "http"]
       }
 
@@ -150,7 +150,7 @@ EOH
 
       config {
         network_mode = "host"
-        image = "ghcr.io/arroyosystems/arroyo-services:amd64"
+        image = "ghcr.io/arroyosystems/arroyo-services:[[ .arroyo.image_tag ]]"
         ports = ["api-http", "api-grpc", "api-admin", "controller-admin", "controller-grpc"]
       }
 
